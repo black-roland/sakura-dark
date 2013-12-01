@@ -1,0 +1,13 @@
+diff -uNrp sakura-3.1.0.orig/src/sakura.c sakura-3.1.0/src/sakura.c
+--- sakura-3.1.0.orig/src/sakura.c	2013-06-25 05:22:42.000000000 +1000
++++ sakura-3.1.0/src/sakura.c	2013-12-01 17:58:11.000000000 +1000
+@@ -2105,6 +2105,9 @@ sakura_init()
+ 	gtk_window_set_title(GTK_WINDOW(sakura.main_window), "sakura");
+ 	gtk_window_set_has_resize_grip(GTK_WINDOW(sakura.main_window), sakura.show_resize_grip);
+ 
++	/* Dark theme */
++	g_object_set(gtk_settings_get_default(), "gtk-application-prefer-dark-theme", TRUE, NULL);
++
+ 	/* Add datadir path to icon name */
+ 	char *icon = g_key_file_get_value(sakura.cfg, cfg_group, "icon_file", NULL);
+ 	char *icon_path = g_strdup_printf(DATADIR "/pixmaps/%s", icon);
