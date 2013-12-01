@@ -2,14 +2,14 @@
 
 Name:           sakura
 Version:        3.1.0
-Release:        1.dark%{?dist}
+Release:        101.dark%{?dist}
 Summary:        Terminal emulator based on GTK and VTE
 
 Group:          User Interface/X
 License:        GPLv2
 URL:            https://launchpad.net/sakura
 Source0:        https://launchpad.net/sakura/trunk/%{version}/+download/sakura-%{version}.tar.bz2
-Patch0:         sakura-3.1.0-dark.patch
+Patch0:         sakura-%{?version}-dark.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:  pkgconfig(glib-2.0) >= 2.20
