@@ -1,0 +1,12 @@
+diff -uNrp sakura-3.1.3.orig/sakura.desktop sakura-3.1.3/sakura.desktop
+--- sakura-3.1.3.orig/sakura.desktop	2013-12-14 05:31:31.000000000 +1000
++++ sakura-3.1.3/sakura.desktop	2013-12-22 15:46:42.323953201 +1000
+@@ -3,7 +3,7 @@ Name=Sakura
+ Comment=Use the command line
+ TryExec=sakura
+ Exec=sakura
+-Icon=terminal-tango
++Icon=utilities-terminal
+ Type=Application
+ Categories=GTK;Utility;TerminalEmulator;System;
+ StartupNotify=true
