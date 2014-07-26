@@ -1,6 +1,6 @@
-diff -uNrp sakura-3.1.3.orig/src/sakura.c sakura-3.1.3/src/sakura.c
---- sakura-3.1.3.orig/src/sakura.c	2013-12-14 05:31:31.000000000 +1000
-+++ sakura-3.1.3/src/sakura.c	2013-12-21 19:00:18.804337412 +1000
+diff -uNrp sakura-3.1.4.orig/src/sakura.c sakura-3.1.4/src/sakura.c
+--- sakura-3.1.4.orig/src/sakura.c	2013-12-14 05:31:31.000000000 +1000
++++ sakura-3.1.4/src/sakura.c	2013-12-21 19:00:18.804337412 +1000
 @@ -2048,6 +2048,9 @@ sakura_init()
  	gtk_window_set_title(GTK_WINDOW(sakura.main_window), "sakura");
  	gtk_window_set_has_resize_grip(GTK_WINDOW(sakura.main_window), sakura.show_resize_grip);
